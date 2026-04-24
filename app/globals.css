@@ -6,21 +6,50 @@
 @layer base {
   body {
     font-family: 'Inter', 'Calibri', sans-serif;
-    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+    @apply bg-blanc text-noir dark:bg-noir dark:text-blanc;
   }
 }
 
 @layer components {
   .container-custom {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-vert text-blanc px-4 py-2 rounded-lg text-sm font-medium 
+           hover:bg-vertFonce transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-jaune text-noir px-4 py-2 rounded-lg text-sm font-medium 
+           hover:bg-jauneFonce transition-all duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-rouge text-blanc px-4 py-2 rounded-lg text-sm font-medium 
+           hover:bg-rougeFonce transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-vert text-vert px-4 py-2 rounded-lg text-sm font-medium 
+           hover:bg-vert hover:text-blanc transition-all duration-200;
   }
 }
 
 @layer utilities {
-  .text-primary {
-    color: #059669;
-  }
-  .bg-primary {
-    background-color: #059669;
-  }
+  .text-vert { color: #008753; }
+  .bg-vert { background-color: #008753; }
+  .border-vert { border-color: #008753; }
+  
+  .text-jaune { color: #FCD116; }
+  .bg-jaune { background-color: #FCD116; }
+  
+  .text-rouge { color: #E8112D; }
+  .bg-rouge { background-color: #E8112D; }
+  
+  .text-noir { color: #1A1A1A; }
+  .bg-noir { background-color: #1A1A1A; }
+  
+  .text-blanc { color: #FFFFFF; }
+  .bg-blanc { background-color: #FFFFFF; }
 }

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { 
   Menu, X, ShoppingBag, User, Sun, Moon, 
-  Home, Store, BookOpen, Info, Phone, Heart
+  Home, Store, BookOpen, Info, Phone
 } from 'lucide-react'
 import { useTheme } from '@/contexts/ThemeContext'
 
@@ -74,7 +74,7 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Right Actions */}
+          {/* Right Actions - Icônes supprimées */}
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={toggleTheme}
@@ -82,10 +82,6 @@ export default function Navbar() {
             >
               {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
             </button>
-            
-            <Link href="/wishlist" className="text-gray-500 hover:text-primary transition p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
-              <Heart size={18} />
-            </Link>
             
             <Link href="/cart" className="text-gray-500 hover:text-primary transition relative p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
               <ShoppingBag size={18} />
@@ -148,9 +144,6 @@ export default function Navbar() {
                 )
               })}
               <hr className="border-gray-100 dark:border-gray-800 my-2" />
-              <Link href="/wishlist" onClick={() => setIsOpen(false)} className="flex items-center gap-2 px-3 py-2 text-sm text-gray-600">
-                <Heart size={16} /> Favoris
-              </Link>
               <Link href="/login" onClick={() => setIsOpen(false)} className="px-3 py-2 text-sm text-gray-600">
                 Connexion
               </Link>

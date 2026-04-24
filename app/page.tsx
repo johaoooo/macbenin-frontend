@@ -99,15 +99,6 @@ export default function Home() {
         <div className="container-custom relative z-10 w-full">
           <div className="max-w-xl">
 
-            <motion.span
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-primary bg-primary/15 border border-primary/30 px-4 py-1.5 rounded-full mb-5"
-            >
-              🇧🇯 Maison Afi Collection
-            </motion.span>
-
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}

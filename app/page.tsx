@@ -12,7 +12,8 @@ import {
 import Counter from '@/components/ui/Counter'
 import { useLanguage } from '@/contexts/LanguageContext'
 
-const heroImages = ['/afi.jpeg','/afi2.jpeg','/afi3.jpeg','/afi4.jpeg','/afi5.jpeg','/afi6.jpeg','/afi7.jpeg']
+// Liste des images sans afi.jpeg
+const heroImages = ['/afi2.jpeg','/afi3.jpeg','/afi4.jpeg','/afi5.jpeg','/afi6.jpeg','/afi7.jpeg']
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0)
@@ -130,7 +131,7 @@ export default function Home() {
                     {[...Array(5)].map((_, i) => <Star key={i} className="w-2.5 h-2.5 fill-jaune text-jaune" />)}
                   </div>
                   <div className="text-[10px] text-blanc/70 uppercase tracking-wider mt-1">Note moyenne</div>
-                  <div className="text-xs text-vert font-semibold">4.9/5</div>
+                  <div className="text-xs text-vertt font-semibold">4.9/5</div>
                 </div>
               </div>
             </motion.div>
